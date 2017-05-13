@@ -1,0 +1,100 @@
+body {
+    padding-top: 10%;
+    background-color: #6376d8;
+}
+
+
+hr {
+    border-top: 1px solid #ffffff !important;
+    padding-bottom: 10px;
+}
+
+p, p span, .secondaryTitle, hr, .blinking-cursor, label, .instructions {
+    font-family: 'Julius Sans One', sans-serif !important;
+    color:#ffffff !important;
+}
+
+.outerContainer {
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
+}
+.group 			  {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+input {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:28px;
+    padding:7px 94px 7px 20px;
+    display:block;
+    width:490px;
+    border:none;
+    /*border:2px solid #5264AE;*/
+    border-radius: 50px;
+    color: #5264AE;
+
+}
+
+input:focus 		{ outline:none; }
+
+
+label {
+    background-color: #6376d8;
+    font-size:20px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:3px;
+    top:3px;
+    border-radius: 50px;
+    padding: 10px;
+    max-height: 86px;
+    transition:1s ease all;
+    -moz-transition:1s ease all;
+    -webkit-transition:1s ease all;
+}
+
+.instructions {
+    font-size: 12px;
+    padding-bottom:45px;
+    padding-top:5px;
+    visibility: hidden;
+}
+
+#shortenedAddress {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #5264AE;
+    position: absolute;
+    left: 257px;
+    top: 8px;
+    font-size: 29px;
+    visibility: hidden;
+}
+
+#shortenedAddress:hover {
+    text-decoration: none;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+    left:344px;
+}
+
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+.description {
+    font-size: 16px;
+    text-shadow: none;
+}
+
+.mainTitle {
+    font-size: 20px;
+}
+
+
