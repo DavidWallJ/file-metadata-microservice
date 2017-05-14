@@ -4,7 +4,7 @@
 /**
  * Created by david on 5/2/17.
  */
-var mongoose = require('mongoose');
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var multer = require('multer');
@@ -20,7 +20,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 // connect to mongodb via mongoose
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost');
+// mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost');
 
 
 app.post('/', multer({ dest: './uploads/'}).single('upl'), function(req,res){
