@@ -19,8 +19,7 @@ app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
 
-// connect to mongodb via mongoose
-// mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost');
+// https://metadata-service-davidjwall.herokuapp.com/
 
 
 app.post('/', multer({ dest: './uploads/'}).single('upl'), function(req,res){
@@ -32,5 +31,5 @@ app.post('/', multer({ dest: './uploads/'}).single('upl'), function(req,res){
 
 
 app.listen(PORT, function () {
-    console.log('Listening on port 3000!')
+    console.log('Listening on port 3000!');
 });
